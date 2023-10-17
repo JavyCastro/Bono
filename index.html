@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> bono </title>
+    <style>
+        table{
+            border-color: #216300;
+            border-collapse: 40px;
+            background: #6ebe30;
+        }
+        h1{
+            font-family:'Berlin Sans FB Demi';
+            font-size: 70px;
+            color:#729547;
+            text-align: center;
+        }
+        h3{
+            font-family:'Berlin Sans FB Demi';
+            font-size: 45px;
+            color:#426d0d;
+            text-align: center;
+        }
+        td{
+            font-family:'Berlin Sans FB Demi';
+            font-size: 30px;
+            color:#d6ff94;
+            text-align: center;
+        }
+        body{
+		background:linear-gradient(to right,#bcef7b,#6ebe30,#bcef7b);
+	}        
+        
+        
+
+        </style>
+</head>
+
+<body>
+    <script>
+        nombre = prompt("Ingrese el Nombre del Trabajador")
+        departamento = prompt("Ingrese su Departamento")
+        sueldo = prompt("Sueldo")
+        anitguedad = prompt("Ingrese su antigueda")
+        dias = prompt("Dias Laborando")
+        bono = 0;
+        subtotal = sueldo * dias;
+
+       
+
+        respuesta = confirm("se aplicara el descuento a " + nombre + "?")
+
+        if (anitguedad >= 15) {
+            bono = subtotal * 0.30;
+        }
+        else {
+            bono = subtotal * 0.15;
+        }
+
+        total = bono + subtotal;
+
+    </script>
+
+    <center><h1>BONO DE ANTIGUEDASD PARA LOS EMPLEADOS</h1></center>
+<p>
+    <center> <table width="90%" border="4">
+            <tr>
+                <td>Nombre</td>
+                <td>Departamento</td>
+                <td>Sueldo</td>
+                <td>Antiguedad</td>
+                <td>Dias</td>
+                <td>Subtotal</td>
+                <td>Total</td>
+            </tr>
+            <tr>
+                <td>
+                    <center>
+                        <script>
+                            document.write(nombre);
+                        </script>
+                    </center>
+                </td>
+            
+            
+                <td>
+                    <center>
+                        <script>
+                            document.write(departamento);
+                        </script>
+                    </center>
+                </td>
+           
+                <td>
+                    <center>
+                        <script>
+                            document.write("$"+ sueldo + " MX");
+                        </script>
+                    </center>
+                </td>
+            
+                <td>
+                    <center>
+                        <script>
+                            document.write(anitguedad +" años");
+                        </script>
+                    </center>
+                </td>
+           
+                <td>
+                    <center>
+                        <script>
+                            document.write(dias);
+                        </script>
+                    </center>
+                </td>
+            
+                <td>
+                    <center>
+                        <script>
+                            document.write("$"+subtotal+" MX");
+                        </script>
+                    </center>
+                </td>
+            
+                <td>
+                    <center>
+                        <script>
+                            document.write("$"+total+"  MX");
+                        </script>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    <center> <h3>Castro Moreno Javier Vladimir</h3> </center>
+</body>
+
+</html>
